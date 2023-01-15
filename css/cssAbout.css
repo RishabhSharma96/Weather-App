@@ -1,0 +1,185 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+/* navbar css */
+
+nav ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+}
+
+.nav-logo {
+    flex: 1;
+    font-size: 2rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+}
+
+.nav-toggler {
+    display: none;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    color: cyan;
+    text-decoration: underline;
+}
+
+@media(max-width:678px) {
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    .nav-toggler {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-items {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .collapsed {
+        display: block;
+    }
+}
+
+/* center div css */
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.weather-image {
+    height: 32rem;
+    width: 34rem;
+    margin-top: 3rem;
+}
+
+.left {
+    width: 50%;
+    padding-left: 5rem;
+    padding-top: 13rem;
+}
+
+.top-info {
+    font-size: 1rem;
+    color: grey;
+}
+
+.mid1 {
+    font-size: 2rem;
+    line-height: 2;
+    color: grey;
+    font-weight: bolder;
+}
+
+.mid2 {
+    font-size: 2rem;
+    line-height: 2;
+    color: rgb(93, 93, 223);
+    font-weight: bolder;
+}
+
+.mid3 {
+    font-size: 2rem;
+    color: grey;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+button {
+    width: 8rem;
+    height: 2.5rem;
+    background-color: rgb(202, 202, 228);
+    border-radius: 2rem;
+    border: none;
+    margin-top: 0.3rem;
+}
+
+@media(max-width:1200px) {
+
+    .weather-image {
+        height: 27rem;
+        width: 29rem;
+    }
+
+    .left {
+        width: 70%;
+        padding-left: 3rem;
+        padding-top: 8rem;
+        margin-right: 5rem;
+    }
+
+    button{
+        margin-top: 2rem;
+    }
+    
+}
+
+@media(max-width: 850px){
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .left{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    button{
+        margin-top: 2rem;
+    }
+}
+
+
+/* footer css */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+}
